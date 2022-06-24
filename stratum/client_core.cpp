@@ -10,6 +10,11 @@ void get_next_extraonce1(char *extraonce1)
 	g_extraonce1_counter++;
 	sprintf(extraonce1, "%08x", g_extraonce1_counter|0x81000000);
 
+    if (!strcmp(g_stratum_algo, "neoscrypt-xaya"))
+        sprintf(extraonce1, "%08x", g_extraonce1_counter | 0x00008100);
+    else
+    	sprintf(extraonce1, "%08x", g_extraonce1_counter|0x81000000);
+	
 	CommonUnlock(&g_nonce1_mutex);
 }
 
