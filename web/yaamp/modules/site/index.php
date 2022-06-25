@@ -32,7 +32,7 @@ $payout_freq = (YAAMP_PAYMENTS_FREQ / 3600) . " hours";
 
 <center>
 <ul>
-<li><b><img alt="Pool4U Button Card" src="https://pool4u.net/images/pool4u_button.png" style="height: 123px; width: 300px;" /></b></li>
+<li><b><img alt="Button Card" src="https://rod.spacexpanse.org/images/rod-640.png" style="height: 123px; width: 123px;" /></b></li>
 <li>&nbsp;</li>
 <li><b>No registration</b> is required, we do payouts of the currency you are mining. Use your wallet address as username.</li>
 <li>&nbsp;</li>
@@ -48,7 +48,7 @@ $payout_freq = (YAAMP_PAYMENTS_FREQ / 3600) . " hours";
 <!-- Stratum Auto generation code, will automatically add coins when they are enabled and auto ready -->
 
 <div class="main-left-box">
-<div class="main-left-title">How to mine with pool4u.net</div>
+<div class="main-left-title">How to mine with us</div>
 <div class="main-left-inner">
 
 <center><table>
@@ -134,15 +134,15 @@ $payout_freq = (YAAMP_PAYMENTS_FREQ / 3600) . " hours";
 		</td>
 	</tr>
 	<tr>
-			<td colspan="7"><p class="main-left-box" style="padding: 3px; color: #000000; background-color: #ffffff; font-family: monospace;" id="output">-a  -o stratum+tcp://pool4u.net:0000 -u . -p c=</p>
+			<td colspan="7"><p class="main-left-box" style="padding: 3px; color: #000000; background-color: #ffffff; font-family: monospace;" id="output">-a  -o stratum+tcp://pool.rod.spacexpanse.org:0000 -u . -p c=</p>
 		</td>
 	</tr>
 </tbody></table>
 
 <ul>
 <li><b>Your WALLET ADDRESS must be valid for the coin you are mining !</b></li>
-<li><b>DO NOT USE a BTC address here, the auto exchange is disabled on these stratums !</b></li>
-<li>See the "pool4u.net Coins" area on the right for PORT numbers. You can mine any coin regardless if the coin is enabled or not for autoexchange. Payouts will only be made in that coin.</li>
+<li><b>DO NOT USE a BTC address here if auto exchange is disabled on these coin stratums !</b></li>
+<li>See the "Coins" area on the right for PORT numbers. You can mine any coin regardless if the coin is enabled or not for autoexchange. Payouts will only be made in that coin.</li>
 <br>
 </ul>
 </div></div></center><br>
@@ -165,11 +165,12 @@ $payout_freq = (YAAMP_PAYMENTS_FREQ / 3600) . " hours";
           <form action="#" method="post" id="recommendedminer" class="recommendedminer">
             <p>
               <select id="scripts" name="scripts" onChange="selectionChange()">
-                <option value="Please select algorithm">Select Algo</option>
+                <option value="Please select algorithm">Select algo and platform</option>
 
-                <option value="SRBMiner-MULTI v0.9.3" data-donwload-href="https://github.com/doktor83/SRBMiner-Multi/releases/tag/0.9.3">minotaurx</option>
-		<option value="ccminer v2.3.1" data-donwload-href="https://github.com/tpruvot/ccminer/releases/tag/2.3.1-tpruvot">neoscrypt</option>
-
+                <option value="ccminer-x64 v0.1.1-windows" data-donwload-href="https://github.com/SpaceXpanse/ccminer/releases/download/v0.1.1-windows/ccminer-64bit.zip">Nvidia and Windows</option>
+		<option value="sgminer-fancyIX-win64-0.9.4-windows" data-donwload-href="https://github.com/SpaceXpanse/sgminer/releases/download/v0.1.1-windows/sgminer-fancyIX-win64-0.9.4.zip">AMD and Windows</option>
+		<option value="sgminer-fancyIX-win64-0.9.4-linux" data-donwload-href="https://github.com/SpaceXpanse/sgminer/releases/download/v0.1.1-linux/sgminer-fancyIX-linux-amd64.zip">AMD and Linux</option>
+<!--
                 <option
                   value="ccminer v2.3.1"
                   data-donwload-href="https://github.com/tpruvot/ccminer/releases/tag/2.3.1-tpruvot"
@@ -218,6 +219,7 @@ $payout_freq = (YAAMP_PAYMENTS_FREQ / 3600) . " hours";
                 >
                   bmw512
                 </option>
+-->
               </select>
           
               <input type="text" id="demo" readonly />
@@ -295,11 +297,11 @@ endif;
 <div class="main-left-inner">
 
 <ul class="social-icons">
-    <li><a href="https://discord.gg/6uDrEh6yTM"><img src='/images/discord.png' /></a></li>
-    <li><a href="http://www.twitter.com"><img src='/images/Twitter.png' /></a></li>
-    <li><a href="mailto:support@pool4u.net"><img src='/images/email.png' /></a></li>
+    <li><a href="https://discord.gg/uPJdncgrBe"><img src='/images/discord.png' /></a></li>
+    <li><a href="https://twitter.com/spacexpanse"><img src='/images/Twitter.png' /></a></li>
+    <li><a href="mailto:hq@spacexpanse.org"><img src='/images/email.png' /></a></li>
 <!--    <li><a href="http://www.youtube.com"><img src='/images/telegram.png' /></a></li> -->
-<!--    <li><a href="http://www.github.com"><img src='/images/Github.png' /></a></li> -->
+    <li><a href="https://github.com/SpaceXpanse"><img src='/images/Github.png' /></a></li>
 
 </ul>
 
