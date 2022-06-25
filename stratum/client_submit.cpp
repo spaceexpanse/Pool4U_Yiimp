@@ -49,7 +49,6 @@ void build_submit_values(YAAMP_JOB_VALUES *submitvalues, YAAMP_JOB_TEMPLATE *tem
 			ntime, templ->nbits, nonce);
 		ser_string_be(submitvalues->header, submitvalues->header_be, 20);
 		sprintf(submitvalues->header_be, "%s%s", submitvalues->header_be, templ->priceinfo);
-	} else {
 		
 	} else if (!strcmp(g_stratum_algo, "neoscrypt-xaya")) {
  	    sprintf(submitvalues->xaya_header, "%s%s%s", templ->xaya_header, nonce1, nonce2);
